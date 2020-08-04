@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Category"
+        app:showAsAction="never"
+        >
+        <menu>
+            <item
+                android:id="@+id/cat_automobile"
+                android:title="Automobile"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/cat_mobile"
+                android:title="Mobile"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/cat_electronics"
+                android:title="Electronics"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/cat_property"
+                android:title="Property"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/cat_stationary"
+                android:title="Stationary"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/cat_all"
+                android:title="All"
+                app:showAsAction="never"
+                />
+        </menu>
+
+    </item>
+
+
+    <item
+        android:title="Price"
+        app:showAsAction="never"
+        >
+        <menu>
+            <item
+                android:id="@+id/price_5k"
+                android:title="0 to 5000"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/price_15k"
+                android:title="5000 to 15000"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/price_25k"
+                android:title="15000 to 25000"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/price_35k"
+                android:title="25000 to 35000"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/price_45k"
+                android:title="35000 to 45000"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/price_all"
+                android:title="Greater than 45000"
+                app:showAsAction="never"
+                />
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Ad Type"
+        app:showAsAction="never"
+        >
+        <menu>
+            <item
+                android:id="@+id/sell_type"
+                android:title="Selling Ads"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/rent_type"
+                android:title="Renting Ads"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/bid_type"
+                android:title="Biding Ads"
+                app:showAsAction="never"
+                />
+        </menu>
+
+    </item>
+
+
+
+</menu>

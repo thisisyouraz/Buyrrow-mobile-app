@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/idHome"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/idPostAd"
+            android:icon="@drawable/ic_ad_post"
+            android:title="Create new ad" />
+        <item
+            android:id="@+id/idMyAds"
+            android:icon="@drawable/ic_my_ads"
+            android:title="My ads" />
+
+        <item
+            android:id="@+id/idAboutAs"
+            android:icon="@drawable/ic_about_us"
+            android:title="About us" />
+
+
+    </group>
+
+    <item android:title="Logout options">
+        <menu>
+
+            <item
+                android:id="@+id/idSignOut"
+                android:icon="@drawable/ic_signout"
+                android:title="Sign out" />
+
+            <!--            <item-->
+            <!--                android:id="@+id/idAdminHomeActivity"-->
+            <!--                android:title="admin home"-->
+            <!--                android:icon="@drawable/ic_home" />-->
+
+        </menu>
+    </item>
+
+    <item android:title="Admin">
+        <menu>
+
+            <item
+                android:id="@+id/idAdminHomeActivity"
+                android:icon="@drawable/ic_home"
+                android:title="Admin login" />
+
+        </menu>
+    </item>
+
+
+</menu>

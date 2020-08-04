@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_bid_detail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/id_sendOffer_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_bid_detail">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/id_call_btn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_bid_detail">
+
+            <TextView
+
+                android:id="@+id/id_title_bidDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="#0000FF"
+                android:textSize="20sp" />
+
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/id_slider_bid_detail"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:corner_radius="5"
+                app:delay="0"
+                app:period="1000" />
+
+
+            <TextView
+                android:id="@+id/id_released_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Released price"
+                android:textColor="#0000FF"
+                android:textSize="15sp" />
+
+            <!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight=".50"-->
+            <!--                    android:layout_marginLeft="30dp"-->
+            <!--                    android:textStyle="bold"-->
+
+            <!--                    android:textColor="#0000FF"-->
+
+            <!--                    android:text="Title"-->
+            <!--                    android:textSize="15sp"-->
+            <!--                    />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/id_title_bidDetail"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="0.70"-->
+            <!--                    android:textSize="15sp" />-->
+
+            <!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+            <!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight=".50"-->
+            <!--                    android:layout_marginLeft="30dp"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:text="Ad type"-->
+            <!--                    android:textSize="15sp"-->
+            <!--                    android:textColor="#0000FF"-->
+            <!--                    />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/id_bid_adType"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="0.70"-->
+            <!--                    android:textSize="15sp" />-->
+
+            <!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="seller contact: "
+                android:textSize="16sp"
+
+                android:textColor="#0000ff"
+                />
+
+                <TextView
+                    android:id="@+id/id_seller_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12345678"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Category:  "
+                    android:textSize="16sp"
+                    android:textColor="#0000ff"
+                    />
+
+                <TextView
+                    android:id="@+id/id_category_bid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="category"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+
+                android:id="@+id/id_bidDetail_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="this is description of the ad."
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/id_highest_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="highest Offer"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/id_buy_it_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="buy it now"
+                android:textSize="15sp" />
+
+
+            <TextView
+
+                android:id="@+id/id_end_bidding_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Will end On"
+                android:textColor="#0000FF"
+                android:textSize="15sp" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/offer_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:text="Your offer:"
+                    android:textColor="#0000FF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/id_myOfferEt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:inputType="number" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+
+                android:id="@+id/id_add_upto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Add upto"
+                android:textColor="#0000FF"
+                android:textSize="15sp" />
+
+
+            <!--            android:textStyle="bold"-->
+            <!--            android:layout_marginLeft="30dp"-->
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/id_sendOffer_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="send Offer"
+
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

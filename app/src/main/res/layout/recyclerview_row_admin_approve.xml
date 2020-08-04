@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/adminApprove_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--            <androidx.appcompat.widget.AppCompatImageView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="180dp"-->
+            <!--                android:id="@+id/id_recyclerAdminApprove_imageView"-->
+            <!--                android:layout_marginLeft="8dp"-->
+            <!--                android:layout_marginRight="8dp"-->
+            <!--                android:scaleType="centerCrop"-->
+            <!--                />-->
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider_admin_approve"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:corner_radius="5"
+                app:delay="0"
+                app:period="1000" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/id_recyclerAdminApprove_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:layout_weight="0.70"
+
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/id_recyclerAdminApprove_category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.30"
+                        android:text="category"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="18sp" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:id="@+id/id_recycler_ApproveAd_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:text="this is descriptio and specifications of the..." />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/id_admin_ad_approveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="#008000"
+                    android:text="Approve"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/id_admin_ad_rejectBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="#FF0000	"
+                    android:text="Reject"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/id_recyclerAdminApprove_adType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Ad type"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="|"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/id_recyclerAdminApprove_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="$120"
+                    android:textSize="18sp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

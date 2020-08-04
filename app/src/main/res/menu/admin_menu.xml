@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/idHomeAdmin"
+        android:title="Home"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:id="@+id/idApproveAds"
+        android:title="Approve ads"
+        android:icon="@drawable/ic_my_ads" />
+
+
+    </group>
+
+    <item android:title="Logout options">
+        <menu>
+            <item
+                android:id="@+id/id_SignOut_admin"
+                android:title="Sign out"
+                android:icon="@drawable/ic_signout" />
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_cellRent_detail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/id_track_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_cellRent_detail"
+        app:layout_constraintVertical_bias="0.0"
+        android:paddingBottom="5dp"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/id_call_btn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_cellRent_detail"
+            android:paddingBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/id_title_cellRent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="#0000ff"
+                android:textSize="18sp" />
+
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider_cellRent_Detail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                app:corner_radius="5"
+                app:delay="0"
+                app:period="1000" />
+
+            <!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="30dp"-->
+            <!--                    android:textColor="#0000FF"-->
+            <!--                    android:layout_weight=".50"-->
+            <!--                    android:text="Title"-->
+
+
+            <!--                    android:textSize="15sp"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/id_title_cellRent"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="0.50"-->
+            <!--                    android:textSize="15sp" />-->
+
+            <!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_cellRent_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.80"
+                    android:text="price"
+                    android:textColor="#0000FF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/id_cellRent_adType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.20"
+                    android:text="Ad type"
+                    android:textSize="15sp"
+                    android:textColor="#008000"
+                    />
+
+            </LinearLayout>
+
+
+            <!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+
+
+            <!--                    android:layout_marginLeft="30dp"-->
+            <!--                    android:layout_weight=".50"-->
+            <!--                    android:text="Ad type"-->
+
+            <!--                    android:textColor="#0000FF"-->
+            <!--                    android:textSize="15sp"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/id_cellRent_adType"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="0.50"-->
+            <!--                    android:textSize="15sp" />-->
+
+            <!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Seller contact:  "
+                    android:textSize="16sp"
+                    android:textColor="#0000FF"
+                    />
+
+            <TextView
+                android:id="@+id/id_cellRent_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="123456"
+                android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Category:  "
+                    android:textSize="16sp"
+                    android:textColor="#0000ff"
+                    />
+
+            <TextView
+                android:id="@+id/id_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="category"
+                android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/insertion_point"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+            </LinearLayout>
+
+
+
+            <!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+
+            <!--                    android:layout_marginLeft="30dp"-->
+            <!--                    android:layout_weight=".50"-->
+            <!--                    android:text="Contact #"-->
+
+            <!--                    android:textColor="#0000FF"-->
+            <!--                    android:textSize="15sp"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/id_cellRent_number"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="0.50"-->
+            <!--                    android:textSize="15sp" />-->
+
+            <!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="specifications:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/id_cellRent_desc"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/id_track_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="track location"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/id_call_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <Button
+        android:id="@+id/id_call_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_button_background"
+        android:enabled="true"
+        android:text="call"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
