@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
 android:layout_width="match_parent"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 android:orientation="vertical">
@@ -24,9 +25,6 @@ android:orientation="vertical">
             android:id="@+id/image_slider_admin_home"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            app:corner_radius="5"
-            app:delay="0"
-            app:period="1000"
             />
         <LinearLayout
             android:layout_width="match_parent"

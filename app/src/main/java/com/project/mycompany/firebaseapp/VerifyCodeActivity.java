@@ -1,5 +1,6 @@
 package com.project.mycompany.firebaseapp;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.util.Log;
@@ -72,7 +73,7 @@ public class VerifyCodeActivity extends AppCompatActivity {
                 phoneNumber,
                 60,
                 TimeUnit.SECONDS,
-                TaskExecutors.MAIN_THREAD,
+                (Activity) TaskExecutors.MAIN_THREAD,
                 mCallBack
         );
     }

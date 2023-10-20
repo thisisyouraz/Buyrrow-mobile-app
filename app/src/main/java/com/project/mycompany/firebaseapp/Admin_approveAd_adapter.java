@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -99,13 +100,13 @@ public class Admin_approveAd_adapter extends RecyclerView.Adapter<ApproveApVh> {
         List<SlideModel> slideModels = new ArrayList<>();
 
         for (int i = 0; i < credentials.getImageLinks().size(); i++) {
-            slideModels.add(new SlideModel(credentials.getImageLinks().get(i)));
+            slideModels.add(new SlideModel(credentials.getImageLinks().get(i), ScaleTypes.FIT));
 
             Log.d("link", "setImagesInSlider: "+credentials.getImageLinks().get(i));
         }
         Log.d("link", "setImagesInSlider: before images set");
 
-        holder.slider.setImageList(slideModels,true);
+        holder.slider.setImageList(slideModels,ScaleTypes.FIT);
 
         progressDialog.dismiss();
     }

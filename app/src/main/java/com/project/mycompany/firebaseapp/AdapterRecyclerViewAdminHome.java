@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 
 import java.util.ArrayList;
@@ -110,7 +111,7 @@ public class AdapterRecyclerViewAdminHome extends RecyclerView.Adapter<AdViewHol
 
 
         for (int i = 0; i < credentials.getImageLinks().size(); i++) {
-            slideModels.add(new SlideModel(credentials.getImageLinks().get(i)));
+            slideModels.add(new SlideModel(credentials.getImageLinks().get(i), ScaleTypes.FIT));
 
             Log.d("link", "setImagesInSlider: "+credentials.getImageLinks().get(i));
         }
@@ -118,7 +119,7 @@ public class AdapterRecyclerViewAdminHome extends RecyclerView.Adapter<AdViewHol
 
 
 
-        holder.slider.setImageList(slideModels,true);
+        holder.slider.setImageList(slideModels,ScaleTypes.FIT);
 
         progressDialog.dismiss();
     }

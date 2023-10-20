@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -193,10 +194,10 @@ public class BidAd_detail_admin extends AppCompatActivity {
         List<SlideModel> slideModels = new ArrayList<>();
 
         for (int i = 0; i < credentials.getImageLinks().size(); i++) {
-            slideModels.add(new SlideModel(credentials.getImageLinks().get(i)));
+            slideModels.add(new SlideModel(credentials.getImageLinks().get(i), ScaleTypes.FIT));
         }
 
-        slider.setImageList(slideModels, true);
+        slider.setImageList(slideModels, ScaleTypes.FIT);
     }
 
     private void setOwnerContact(final String id) {
